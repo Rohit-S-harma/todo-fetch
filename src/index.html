@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        #popup {
+            display: none; /* Initially hidden */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid #ccc;
+            color:black;
+            border-radius: 8px;
+            padding: 20px;
+            z-index: 9999; /* Ensure popup is on top */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+    <button class="w-40 h-10 bg-blue-500 text-white rounded-lg">Add User</button>
+    <div class="overflow-x-auto w-full">
+        <table class="table-auto w-full bg-white shadow-md rounded-lg">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="px-4 py-2 text-left ">userid</th>
+                    <th class="px-4 py-2 text-left">id</th>
+                    <th class="px-4 py-2 text-left">todo</th>
+                    <th class="px-4 py-2 text-left">status</th>
+                    <th class="px-4 py-2 text-left">action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
